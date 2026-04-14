@@ -1,130 +1,93 @@
-# TOMATO - Food Ordering Website
+# Smart Food Ordering Platform
 
-This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
+This project is a full-stack food delivery web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a user-friendly interface for browsing food items, managing cart, and placing orders efficiently.
 
-## Demo
-
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
-- Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
+---
 
 ## Features
 
-- User Panel
-- Admin Panel
-- JWT Authentication
-- Password Hashing with Bcrypt
-- Stripe Payment Integration
-- Login/Signup
-- Logout
-- Add to Cart
-- Place Order
-- Order Management
-- Products Management
-- Filter Food Products
-- Login/Signup
-- Authenticated APIs
-- REST APIs
-- Role-Based Identification
-- Beautiful Alerts
+* User Authentication (Login / Signup)
+* Add to Cart & Remove from Cart
+* Dynamic Food Listing
+* Order Placement System
+* REST API Integration
+* Admin Panel for Product & Order Management
+* Secure Password Hashing (bcrypt)
+* JWT-based Authentication
 
-## Screenshots
+---
 
-![Hero](https://i.ibb.co/59cwY75/food-hero.png)
-- Hero Section
+## Tech Stack
 
-![Products](https://i.ibb.co/JnNQPyQ/food-products.png)
-- Products Section
+* Frontend: React.js
+* Backend: Node.js, Express.js
+* Database: MongoDB
+* Authentication: JWT
+* Payment (optional): Stripe
 
-![Cart](https://i.ibb.co/t2LrQ8p/food-cart.png)
-- Cart Page
-
-![Login](https://i.ibb.co/s6PgwkZ/food-login.png)
-- Login Popup
+---
 
 ## Run Locally
 
-Clone the project
+### 1. Clone the repository
 
 ```bash
-    git clone https://github.com/Mshandev/Food-Delivery
+git clone https://github.com/aditya558-gsf/smart-food-ordering.git
+cd smart-food-ordering
 ```
-Go to the project directory
+
+---
+
+### 2. Install dependencies
 
 ```bash
-    cd Food-Delivery
+cd frontend
+npm install
+
+cd ../backend
+npm install
+
+cd ../admin
+npm install
 ```
-Install dependencies (frontend)
+
+---
+
+### 3. Setup Environment Variables
+
+Create a `.env` file inside the backend folder:
+
+```env
+JWT_SECRET=your_secret_key
+SALT=10
+MONGO_URL=your_mongodb_connection
+STRIPE_SECRET_KEY=dummy_key
+```
+
+---
+
+### 4. Start the project
 
 ```bash
-    cd frontend
-    npm install
-```
-Install dependencies (admin)
+# Start Backend
+cd backend
+node server.js
 
-```bash
-    cd admin
-    npm install
-```
-Install dependencies (backend)
-
-```bash
-    cd backend
-    npm install
-```
-Setup Environment Vaiables
-
-```Make .env file in "backend" folder and store environment Variables
-  JWT_SECRET=YOUR_SECRET_TEXT
-  SALT=YOUR_SALT_VALUE
-  MONGO_URL=YOUR_DATABASE_URL
-  STRIPE_SECRET_KEY=YOUR_KEY
- ```
-
-Setup the Frontend and Backend URL
-   - App.jsx in Admin folder
-      const url = YOUR_BACKEND_URL
-     
-  - StoreContext.js in Frontend folder
-      const url = YOUR_BACKEND_URL
-
-  - orderController in Backend folder
-      const frontend_url = YOUR_FRONTEND_URL 
-
-Start the Backend server
-
-```bash
-    nodemon server.js
+# Start Frontend
+cd frontend
+npm run dev
 ```
 
-Start the Frontend server
+---
 
-```bash
-    npm start
-```
+---
 
-Start the Backend server
+## Author
 
-```bash
-    npm start
-```
-## Tech Stack
-* [React](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en)
-* [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
-* [Stripe](https://stripe.com/)
-* [JWT-Authentication](https://jwt.io/introduction)
-* [Multer](https://www.npmjs.com/package/multer)
+Aditya Kumar Das
 
-## Deployment
+---
 
-The application is deployed on Render.
+## Note
 
-## Contributing
-
-Contributions are always welcome!
-Just raise an issue, and we will discuss it.
-
-## Feedback
-
-If you have any feedback, please reach out to me [here](https://www.linkedin.com/in/muhammad-shan-full-stack-developer/)
+This project was built for learning full-stack development and demonstrates integration of frontend, backend, and database systems.
