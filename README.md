@@ -1,6 +1,6 @@
-# Smart Food Ordering Platform
+# Full Stack Food Ordering Platform (MERN)
 
-This project is a full-stack food delivery web application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a user-friendly interface for browsing food items, managing cart, and placing orders efficiently.
+A full-stack food ordering web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It allows users to explore food items, manage their cart, and place orders through a responsive and user-friendly interface.
 
 ---
 
@@ -12,18 +12,18 @@ This project is a full-stack food delivery web application developed using the M
 * Order Placement System
 * REST API Integration
 * Admin Panel for Product & Order Management
-* Secure Password Hashing (bcrypt)
+* Secure Password Hashing using bcrypt
 * JWT-based Authentication
 
 ---
 
 ## Tech Stack
 
-* Frontend: React.js
-* Backend: Node.js, Express.js
-* Database: MongoDB
-* Authentication: JWT
-* Payment (optional): Stripe
+* **Frontend:** React.js
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB
+* **Authentication:** JWT
+* **Payment (optional):** Stripe
 
 ---
 
@@ -55,7 +55,7 @@ npm install
 
 ### 3. Setup Environment Variables
 
-Create a `.env` file inside the backend folder:
+Create a `.env` file inside the **backend** folder:
 
 ```env
 JWT_SECRET=your_secret_key
@@ -64,9 +64,11 @@ MONGO_URL=your_mongodb_connection
 STRIPE_SECRET_KEY=dummy_key
 ```
 
+> Never upload your `.env` file to GitHub.
+
 ---
 
-### 4. Start the project
+### 4. Run the project
 
 ```bash
 # Start Backend
@@ -80,14 +82,27 @@ npm run dev
 
 ---
 
+## Deployment
+
+This project can be deployed using platforms like **Render**, **Vercel**, or **Netlify**.
+
+---
+
+## Future Improvements
+
+* Online payment integration
+* Order tracking system
+* Enhanced UI/UX
+* Real-time notifications
+
 ---
 
 ## Author
 
-Aditya Kumar Das
+**Aditya Kumar Das**
 
 ---
 
 ## Note
 
-This project was built for learning full-stack development and demonstrates integration of frontend, backend, and database systems.
+This project was developed to practice full-stack development and demonstrates integration of frontend, backend, and database systems in a real-world application.
